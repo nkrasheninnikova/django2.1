@@ -10,6 +10,16 @@
     <title>Document</title>
 </head>
 <body>
-ffff
+<header class="header">
+    <div class="header-text">
+        <h1>Welcome to Design.pro</h1>
+    </div>
+
+    <nav class="nav-link">
+        <a href="/">Главная</a>
+        <a href="{% url 'login'%}?next={{request.path}}">Вход</a>
+        <a href="/">Регистрация</a>
+    </nav>
+</header>
 </body>
 </html>
